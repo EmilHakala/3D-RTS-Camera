@@ -28,15 +28,15 @@ var current_height: float = 20.0
 var orbit_center: Vector3 = Vector3.ZERO
 var orbit_radius: float = 20.0
 
+# Set initial position and rotation
 func _ready():
-	# Set initial position and rotation
 	_update_camera_position()
-	rotation_degrees.x = -45  # Tilt the camera down 45 degrees
+	rotation_degrees.x = -45
 
 func _process(delta):
 	var movement = Vector3.ZERO
 	
-	# Keyboard movement
+	# capture movement keys
 	if Input.is_action_pressed("ui_right"):
 		movement.x += 1
 	if Input.is_action_pressed("ui_left"):
@@ -59,7 +59,7 @@ func _process(delta):
 	elif mouse_pos.y > viewport_size.y - edge_scroll_margin:
 		movement.z += 1
 	
-	# Move the orbit center instead of the camera directly
+	# Move the orbit center
 	if movement.length() > 0:
 		movement = movement.normalized()
 		movement = movement.rotated(Vector3.UP, rotation.y)
@@ -71,14 +71,14 @@ func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
 			current_height = max(camera_zoom_min, current_height - camera_zoom_speed * get_process_delta_time())
-			orbit_radius = current_height * 1.5  # Adjust radius based on height
+			orbit_radius = current_height * 1.5  # Adjust orbit radius based on height
 			_update_camera_position()
 		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			current_height = min(camera_zoom_max, current_height + camera_zoom_speed * get_process_delta_time())
-			orbit_radius = current_height * 1.5  # Adjust radius based on height
+			orbit_radius = current_height * 1.5
 			_update_camera_position()
 		
-	# Camera rotation with middle mouse button
+	# Camera rotation with right mouse button
 	elif event is InputEventMouseMotion and event.button_mask == MOUSE_BUTTON_RIGHT:
 		rotate_y(-event.relative.x * rotation_speed * get_process_delta_time())
 		_update_camera_position()
