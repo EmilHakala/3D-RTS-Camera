@@ -11,9 +11,5 @@ config_version=5
 [application]
 
 config/name="RTS_camera"
-run/main_scene="res://node_3d.tscn"
+run/main_scene="res://addons/3d_rts_camera/rtscam.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/3d_rts_camera/plugin.cfg")
