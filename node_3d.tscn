@@ -30,4 +30,4 @@ shadow_enabled = true
 mesh = SubResource("BoxMesh_vf62n")
 
 [node name="Camera3D" parent="." instance=ExtResource("1_s43fe")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.19899, 0.654462, 0.551432)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.30712, 0.654462, 0.551432)
