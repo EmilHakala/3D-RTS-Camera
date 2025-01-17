@@ -1,4 +1,7 @@
-# ![3D RTS Camera Icon](images/icon.svg) 3D RTS Camera - Godot Addon
+<div align="center">
+	<img src="images/icon.svg" alt="Logo" width="160" height="160">
+
+# 3D RTS Camera - Godot Addon
 
 A fully customizable and easy-to-use **3D RTS-style Camera** for Godot 4.3. Intuitive camera movement for real-time strategy games or other projects requiring a top-down camera with RTS-like controls.
 
