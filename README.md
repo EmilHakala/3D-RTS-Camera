@@ -24,10 +24,7 @@ A fully customizable and easy-to-use **3D RTS-style Camera** for Godot 4.3. Intu
 1. [Download the latest release](https://github.com/emilhakala/3d-rts-camera/releases/latest)
    
 2. **Copy to Your Project**
-   - Unpack the `addons/3d_rts_camera` folder into your `/addons` folder within the Godot project.:
-     ```
-     res://addons/3D-RTS-Camera/
-     ```
+   - Unpack the `addons/3d_rts_camera` folder into your `/addons` folder within the Godot project.
      
 3. **Enable the Addon**
    - Open your project in Godot.
