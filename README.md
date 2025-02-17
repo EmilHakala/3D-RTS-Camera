@@ -25,12 +25,6 @@ A fully customizable and easy-to-use **3D RTS-style Camera** for Godot 4.3. Intu
    
 2. **Copy to Your Project**
    - Unpack the `addons/3d_rts_camera` folder into your `/addons` folder within the Godot project.
-     
-3. **Enable the Addon**
-   - Open your project in Godot.
-   - Go to `Project > Project Settings > Plugins`.
-   - Locate the **3D RTS Camera** addon and enable it.
-
 ---
 
 ## How to Use
