@@ -12,10 +12,12 @@ A fully customizable and easy-to-use **3D RTS-style Camera** for Godot 4.3. Intu
 
 ## Features
 
-- Zooming
-- Orbit camera around center point.
-- Movement
+- Smooth zooming with adjustable limits
+- Orbit camera around a center point
 - Edge scrolling
+- Keyboard movement with configurable speed
+- Shift key speed boost
+- Middle mouse button control for pitch and rotation
 
 ---
 
